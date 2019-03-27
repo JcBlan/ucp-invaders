@@ -1,12 +1,11 @@
 from Nave import Nave
 
-class Invasor(cosa):
+class Invasor():
     
     def __init__(self, life, vel):
-        vida = life
-        velocidad = vel
+        self.vida = life
+        self.velocidad = vel
 
-    def destruir(nave : Nave):
         
 
     
