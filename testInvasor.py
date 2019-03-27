@@ -24,6 +24,12 @@ class TestInvasor(unittest.TestCase):
         invasor.destruir(nave)
         self.assertTrue(nave.vida == 100)
 
+    def test_destruir_TodoDano(self):
+        invasor = Invasor(100, 100)
+        nave = Nave(100, 60)
+        invasor.destruir(nave)
+        self.assertLessEqual(nave.vida, 0)
+
 
 if __name__ == "__main__":
     unittest.main(exit=False)
