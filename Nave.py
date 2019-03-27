@@ -6,5 +6,5 @@ class Nave():
         self.velocidad = vel
 
 
-    def destruir(self, nave):
-        self.vida  -= ((self.velocidad * nave.velocidad) / 100)
+    def destruir(self, invasor):
+        invasor.vida  -= ((self.velocidad * invasor.velocidad) / 100)

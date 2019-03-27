@@ -17,13 +17,13 @@ class TestDestruir(unittest.TestCase):
         nave.destruir(invasor)
         self.assertTrue(invasor.vida == 0)
 
-    
+    """
     def test_destruir_completo(self):
         invasor = Invasor(100, 0)
         nave = Nave(100, 0)
         nave.destruir(invasor)
         self.assertTrue(invasor.vida == 100)
-
+    """
 if __name__ == "__main__":
     unittest.main(exit=False)
 
