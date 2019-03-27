@@ -6,4 +6,4 @@ class Asteroide(object):
         self.velocidad = vel
     
     def chocar(self, nave):
-        nave.vida -= self.velocidad * 2
+        nave.vida -= (self.velocidad * nave.velocidad) / 200
