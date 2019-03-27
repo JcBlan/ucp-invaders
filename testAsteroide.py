@@ -38,6 +38,13 @@ class TestAsteroide(unittest.TestCase):
         asteroide.chocarInvasor(invasor)
         self.assertTrue(invasor.vida == 100)
 
+    def test_chocar_Invasor_TodaVel(self):
+        invasor = Invasor(100, 100)
+        asteroide = Asteroide(100)
+        asteroide.chocarInvasor(invasor)
+        self.assertTrue(invasor.vida == 50)
+        
+
 
 if __name__ == "__main__":
     unittest.main(exit=False)
