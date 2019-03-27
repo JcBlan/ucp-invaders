@@ -16,7 +16,13 @@ class TestAsteroide(unittest.TestCase):
         asteroide = Asteroide(0)
         asteroide.chocar(nave)
         self.assertTrue(nave.vida == 100)
-        
+    
+    
+    def test_chocar_Nave_TodaVel(self):
+        nave = Nave(100, 50)
+        asteroide = Asteroide(100)
+        asteroide.chocar(nave)
+        self.assertTrue(nave.vida == 75)
 
 
 if __name__ == "__main__":

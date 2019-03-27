@@ -1,4 +1,5 @@
 from Nave import Nave
+from Invasor import Invasor
 
 class Asteroide(object):
 
