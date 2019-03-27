@@ -35,14 +35,14 @@ class TestInvasor(unittest.TestCase):
         print("TEST - destruir invasorGhost ")
         self.assertTrue(invasorGhost.vida == 100)
     
-    """
+    
     def test_destruir_Invasor(self):
         invasorGhost = InvasorGhost(100, 50)
         nave = Nave(100, 60)
         invasorGhost.destruir(nave)
         print("TEST - destruir nave ")
-        self.assertTrue(invasorGhost.vida == 40)
-    """
+        self.assertTrue(nave.vida == 40)
+    
 
 
 if __name__ == "__main__":
