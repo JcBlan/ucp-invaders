@@ -1,5 +1,5 @@
 
-class Nave():
+class Nave(object):
     
     def __init__(self, vida, vel):
         self.vida = vida
