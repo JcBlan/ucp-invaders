@@ -6,6 +6,7 @@ class Invasor(object):
         self.vida = life
         self.velocidad = vel
 
-        
+    def chocar(self, nave):
+        nave.vida = 0    
 
     
