@@ -8,3 +8,6 @@ class Nave(object):
 
     def destruir(self, invasor):
         invasor.vida  -= ((self.velocidad * invasor.velocidad) / 100)
+
+    def destruirGhost(self, ghost):
+        pass
