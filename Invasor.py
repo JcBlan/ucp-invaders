@@ -1,11 +1,10 @@
 from Nave import Nave
-from Artefacto import Artefacto
+from Personaje import Personaje
 
-class Invasor(Artefacto):
+class Invasor(Personaje):
     
-    def __init__(self, life, vel):
-        self.vida = life
-        Artefacto.__init__(self, vel)
+    def __init__(self, vida, vel):
+        Personaje.__init__(self, vida, vel)
 
     def chocar(self, nave):
         nave.vida = 0 

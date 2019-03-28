@@ -1,10 +1,9 @@
-from Artefacto import Artefacto
+from Personaje import Personaje
 
-class Nave(Artefacto):
+class Nave(Personaje):
     
     def __init__(self, vida, vel):
-        self.vida = vida
-        Artefacto.__init__(self, vel)
+        Personaje.__init__(self, vida, vel)
 
 
     def destruir(self, invasor):
