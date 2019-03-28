@@ -1,10 +1,11 @@
 from Nave import Nave
+from Artefacto import Artefacto
 
 class InvasorGhost(object):
     
     def __init__(self, life, vel):
         self.vida = life
-        self.velocidad = vel
+        Artefacto.__init__(self, vel)
 
     def chocar(self, nave):
         nave.vida = nave.vida

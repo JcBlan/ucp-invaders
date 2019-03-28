@@ -42,8 +42,7 @@ class TestInvasor(unittest.TestCase):
         invasorGhost.destruir(nave)
         print("TEST - destruir nave ")
         self.assertTrue(nave.vida == 40)
-    
 
-
+        
 if __name__ == "__main__":
     unittest.main(exit=False)

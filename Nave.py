@@ -1,9 +1,10 @@
+from Artefacto import Artefacto
 
-class Nave(object):
+class Nave(Artefacto):
     
     def __init__(self, vida, vel):
         self.vida = vida
-        self.velocidad = vel
+        Artefacto.__init__(self, vel)
 
 
     def destruir(self, invasor):
